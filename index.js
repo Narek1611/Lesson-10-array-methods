@@ -58,15 +58,35 @@ let array = [4, 5, 74, -2, 0, -4, 36];
 //   0, -8,  72
 // ]
 
-let numbers = [4, 2, 5, 1, 3];
-function sorting(arr, str = "") {
-  newArr = [];
-  if (str === "Asc" || str === "") {
-    newArr = arr.sort((a, b) => a - b);
-    return newArr;
-  } else if (str === "Desc") {
-    newArr = arr.sort((a, b) => b - a);
-    return newArr;
-  }
-}
-console.log(sorting(numbers, "Desc"));
+// let numbers = [4, 2, 5, 1, 3];
+// function sorting(arr, str = "") {
+//   newArr = [];
+//   if (str === "Asc" || str === "") {
+//     newArr = arr.sort((a, b) => a - b);
+//     return newArr;
+//   } else if (str === "Desc") {
+//     newArr = arr.sort((a, b) => b - a);
+//     return newArr;
+//   }
+// }
+// console.log(sorting(numbers, "Desc"));
+
+const users = [
+  {
+    username: "Yuri Gagarin",
+    lang: "ru",
+    isAstronaut: true,
+  },
+  {
+    username: "Nil Armstrong",
+    lang: "ENG",
+    isAstronaut: true,
+  },
+  {
+    username: "Narek Karapetyan",
+    lang: "ARM",
+    isAstronaut: false,
+  },
+];
+
+console.log(users[2].isAstronaut);
